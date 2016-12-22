@@ -1,17 +1,22 @@
 $(document).ready(function() {
- 
-  $("#owl-example").owlCarousel({
- 
-      autoplay:true,
-      autoplayTimeout:2000,
-      autoplayHoverPause:true,
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3],
-      margin: 20,
-      loop: true
- 
-  });
+
+  
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
 
   $('.smoothScroll').click(function(event) {
     event.preventDefault();
@@ -32,8 +37,5 @@ $(document).ready(function() {
 
   var scene =document.getElementById('fly__scene')
   var parallax = new Parallax(scene);
- 
+
 });
-
-
-
