@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>монголище</title>
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
 <div class="row">
   <div class="col-3">
@@ -20,12 +20,12 @@
   <div class="col-9">
     <nav class="header__nav">
       <ul>
-        <li><a href="">Кто мы</a></li>
-        <li><a href="">Фотографии</a></li>
-        <li><a href="">План полета</a></li>
-        <li><a href="">Заказать</a></li>
-        <li><a href="">Команда</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a href="#about">Кто мы</a></li>
+        <li><a href="#gallery">Фотографии</a></li>
+        <li><a href="#info">План полета</a></li>
+        <li><a href="#">Заказать</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
     </nav>
   </div>
@@ -57,7 +57,7 @@
 </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
   <div class="container">
     <div class="row about__row">
     <div class="col-4">
@@ -72,7 +72,7 @@
   </div>
 </section>
 
-<section class="gallery">
+<section class="gallery" id="gallery">
   <h2 class="gallery__title">Галерея</h2>
   <div class="container">
   <div class="row">
@@ -90,7 +90,7 @@
   </div>
 </section>
 
-<section class="howfly">
+<section class="howfly" id="howfly">
   <div class="container">
     <div class="row howfly__row">
       <h2 class="howfly__title">Как проходят полеты</h2>
@@ -116,10 +116,23 @@
   </div>
 </div>
 
-<section class="price">
-  <h2 class="price__title"></h2>
-  <div class="price calculate"></div>
+
+<section class="price" id="price">
+  <div class="container">
+      <div class="row">
+        <div class="col-5">
+         <h2 class="price__title">Рассчитать стоимость</h2>
+        <p class="price__text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки. </p>
+        <p class="price__text"> Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». </p>
+        <p class="price__text">Выбирайте, куда мы полетим сегодня!</p>
+        </div>
+        <div class="col-6 .col-offset-1">
+          <div class="price calculate"></div>
+        </div>
+      </div>
+  </div>
 </section>
+
 
 <section class="pay-faq">
   <div class="container">
@@ -150,7 +163,7 @@
   </div>
 </section>
 
-<section class="info">
+<section class="info" id="info">
   <div class="container">
       <div class="row">
         <div class="col-12">
@@ -177,27 +190,27 @@
   </div>
 </section>
 
-<section class="team">
+<section class="team" id="team">
   <div class="container">
     <div class="row">
       <h2 class="team__title">Команда инструкторов</h2>
       <div class="col-3">
-        <img src="img/pilot-1.jpg" alt="pilot" class="team__img">
+        <div class="team__img pilot1"></div>
         <p class="team__name">Мария Мариева</p>
         <p class="team__text">Старший пилот</p>
       </div>
       <div class="col-3">
-        <img src="img/pilot-2.jpg" alt="pilot" class="team__img">
+        <div class="team__img pilot2"></div>
         <p class="team__name">Надежда Надеждова</p>
         <p class="team__text">Второй пилот</p>
       </div>
       <div class="col-3">
-        <img src="img/pilot-3.jpg" alt="pilot" class="team__img">
+        <div class="team__img pilot3"></div>
         <p class="team__name">Ирина Иринова</p>
         <p class="team__text">Авиадиспетчер</p>
       </div>
       <div class="col-3">
-        <img src="img/pilot-4.jpg" alt="pilot" class="team__img">
+        <div class="team__img pilot4"></div>
         <p class="team__name">Алена Аленова</p>
         <p class="team__text">Авиатехник</p>
       </div>
@@ -223,7 +236,7 @@
   </div>
 </section>
 
-<section class="contacts">
+<section class="contacts" id="contacts">
   <div class="container">
       <h2 class="contacts__title">Запишите адрес аэропорта</h2>
       <p class="contacts__text">Всеволожск, улица Аэродромная 19А</p>
@@ -268,6 +281,7 @@
   </div>
   </div>
 </div>
+<a class="footer__up" href="#header"><img src="img/up.svg" alt="up"></a>
 </footer>
 </body>
 <script src="js/jquery-1.11.3.min.js"></script>

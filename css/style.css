@@ -457,10 +457,69 @@ position: relative;
 
 
 
-.pay-faq{
+
+
+.price{
+  padding-top: 20px;
   padding-bottom: 60px;
 }
+.price__title{
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: normal;
+  color: #444444;
+  position: relative;
+  margin-bottom: 50px;
+}
+.price__title:after{
+  content: '';
+  position: absolute;
+  height: 7px;
+  width: 63px;
+  background-color: #3e98d7;
+  bottom: 0;
+  left: 0;
+  top: 55px;
+}
+.price__text{
+  font-size: 18px;
+  font-weight: normal;
+  color: #444444;
+  line-height: 24px;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pay-faq{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.pay-faq:before{
+  content: '';
+  display: block;
+  width: 1140px;
+  height: 1px;
+  background-color: #c7c5c5;
+  top: 0;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
 .pay__title, .faq__title{
   margin-top: 0;
   font-size: 32px;
@@ -588,12 +647,60 @@ font-weight: 400;
 color: #444444;
 margin-bottom: 0;
 }
+.team__img{
+  display: inline-block;
+  width: 174px;
+  height: 174px;
+  position: relative;
+}
+.pilot1 {
+	background-image: url(../img/pilot-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pilot1:hover {
+	background-image: url(../img/team-after1.PNG);
+}
+
+.pilot2 {
+	background-image: url(../img/pilot-2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pilot2:hover {
+	background-image: url(../img/team-after1.PNG);
+}
+
+.pilot3 {
+	background-image: url(../img/pilot-3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pilot3:hover {
+	background-image: url(../img/team-after2.PNG);
+}
+
+.pilot4 {
+	background-image: url(../img/pilot-4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pilot4:hover {
+	background-image: url(../img/team-after3.PNG);
+}
+
 .team__text{
 padding-top: 0;
 line-height: 1;
 font-size: 18px;
 font-weight: 400;
 color: #444444;
+display: inline-block;
+margin-top: 0;
 }
 
 
@@ -611,7 +718,8 @@ color: #444444;
 
 .reviews{
   text-align: center;
-  padding: 60px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 .reviews__title{
   margin-top: 60px;
@@ -637,7 +745,6 @@ color: #444444;
   font-size: 22px;
   font-weight: 400;
   color: #444444;
-  margin-bottom: 0;
 }
 .reviews__text{
 padding-top: 0;
@@ -765,6 +872,8 @@ overflow: hidden;
 
 .footer{
   background-color: #2c2c2c;
+  height: 70px;
+  position: relative;
 }
 .footer__logo{
   display: inline-block;
@@ -793,4 +902,9 @@ overflow: hidden;
 }
 .footer__nav a:hover{
   border: 1px solid #fff;
+}
+.footer__up{
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
 }
