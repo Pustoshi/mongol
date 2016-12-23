@@ -174,7 +174,7 @@ body{
 
 
 .about{
-height: 504px;
+height: 454px;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
 position: relative;
@@ -252,9 +252,7 @@ position: relative;
   margin: 0 auto;
   top: 55px;
 }
-.owl-carousel img{
-  
-}
+
 
 
 
@@ -487,9 +485,71 @@ position: relative;
   color: #444444;
   line-height: 24px;
 }
-
-
-
+.price__label{
+  display: block;
+  margin-top: 7px;
+  font-size: 18px;
+  color: #444444;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.price__cost{
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444444;
+  font-weight: 400;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+.price__cost-number{
+margin-top: 20px;
+font-size: 38px;
+font-weight: 400;
+color: #f97e7e;
+vertical-align: middle;
+padding-left: 10px;
+}
+.price__select, .price__input{
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  color: #444;
+  font-weight: 400;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-right: 0;
+}
+#name{
+  background-image: url(../img/name.svg);
+  background-repeat: no-repeat;
+  background-position: 4% center;
+  padding-left: 40px;
+}
+#tel{
+  background-image: url(../img/tel.svg);
+  background-repeat: no-repeat;
+  background-position: 4% center;
+  padding-left: 40px;
+}
+.price__btn{
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #46b0dc;
+  padding: 10px 5px 10px 5px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+form{
+  margin-bottom: 15px;
+}
 
 
 

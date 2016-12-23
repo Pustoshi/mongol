@@ -111,7 +111,7 @@
         <span class="count__text">До ближайшего полета</span>
       </div>
       <div class="column6">
-        <div id="countdown"></div>
+        <div id="clock"></div>
       </div>
     </div>
   </div>
@@ -127,11 +127,71 @@
         <p class="price__text"> Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». </p>
         <p class="price__text">Выбирайте, куда мы полетим сегодня!</p>
         </div>
-        <div class="col-6 .col-offset-1">
-          <div class="price calculate"></div>
+        <div class="col-6 col-offset-1">
+        <form action="#" class="price__textcalculate">
+
+          <div class="row">
+            <div class="col-5">
+              <label for="route" class="price__label">Маршрут полета:</label>
+            </div>
+            <div class="col-7">
+              <select name="route" id="route" class="price__select">
+                <option value="#">Сестрорецк - Парнас</option>
+                <option value="#">Парнас - Адидас</option>
+                <option value="#">Плов - Улов</option>
+                <option value="#">Крым - Наш</option>
+                <option value="#">Запад - Восток</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5">
+              <label for="quantity" class="price__label">Количество человек:</label>
+            </div>
+            <div class="col-7">
+              <select name="quantity" id="quantity" class="price__select">
+                <option value="#">1</option>
+                <option value="#">2</option>
+                <option value="#">3</option>
+                <option value="#">4</option>
+                <option value="#">5</option>
+                <option value="#">6</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5">
+              <label for="name" class="price__label">Имя и фамилия:</label>
+            </div>
+            <div class="col-7">
+              <input id="name" type="text" class="price__input">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5">
+              <label for="tel" class="price__label">Телефон:</label>
+            </div>
+            <div class="col-7">
+              <input id="tel" type="text" class="price__input">
+            </div>
+          </div>
+        </form>
+
+      <div class="row">
+        <div class="col-8">
+          <span class="price__cost">Стоимость: </span>
+          <span class="price__cost-number">9000 Р</span>
+        </div>
+        <div class="col-4">
+          <a href="#" class="price__btn">Полетели!</a>
         </div>
       </div>
   </div>
+  </div>
+</div>
 </section>
 
 
@@ -288,7 +348,6 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery.plugin.min.js"></script>
 <script src="js/jquery.countdown.js"></script>
-<script src="js/jquery.countdown-ru.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
 </html>
