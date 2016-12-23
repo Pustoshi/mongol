@@ -434,7 +434,7 @@ position: relative;
 	margin-bottom: 52px;
 }
 
-.count__text {
+.count__text, .count__clock-number{
 	color: #26668e;
 	font-weight: 500;
 	font-size: 32px;
@@ -445,8 +445,18 @@ position: relative;
 	padding: 0;
 	line-height: 100px;
 }
-
-
+.count__clock{
+  text-align: right;
+}
+.count__clock-number{
+  padding-left: 20px;
+}
+.count__clock-text{
+  padding-left: 2px;
+  color: #26668e;
+	font-weight: 500;
+	font-size: 22px;
+}
 
 
 

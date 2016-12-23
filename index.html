@@ -107,11 +107,20 @@
 <div class="count">
   <div class="container">
     <div class="row">
-      <div class="column6">
+      <div class="col-6">
         <span class="count__text">До ближайшего полета</span>
       </div>
-      <div class="column6">
-        <div id="clock"></div>
+      <div class="col-6">
+        <div class="count__clock" id="clock">
+          <span class="count__clock-number">2</span>
+          <span class="count__clock-text">дня</span>
+          <span class="count__clock-number">16</span>
+          <span class="count__clock-text">часов</span>
+          <span class="count__clock-number">8</span>
+          <span class="count__clock-text">минут</span>
+          <span class="count__clock-number">14</span>
+          <span class="count__clock-text">секунд</span>
+        </div>
       </div>
     </div>
   </div>
@@ -151,12 +160,12 @@
             </div>
             <div class="col-7">
               <select name="quantity" id="quantity" class="price__select">
-                <option value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
-                <option value="#">5</option>
-                <option value="#">6</option>
+                <option name="quantity" value="1">1</option>
+                <option name="quantity" value="2">2</option>
+                <option name="quantity" value="3">3</option>
+                <option name="quantity" value="4">4</option>
+                <option name="quantity" value="5">5</option>
+                <option name="quantity" value="6">6</option>
               </select>
             </div>
           </div>
@@ -166,7 +175,7 @@
               <label for="name" class="price__label">Имя и фамилия:</label>
             </div>
             <div class="col-7">
-              <input id="name" type="text" class="price__input">
+              <input  id="name" type="text" class="price__input">
             </div>
           </div>
 
